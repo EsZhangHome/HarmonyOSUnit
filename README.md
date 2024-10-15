@@ -1,0 +1,2 @@
+# HarmonyOSUnit
+本项目是一个基于HarmonyOS的学习项目，涵盖了HarmonyOS开发中的核心知识点与实践，帮助开发者深入理解并掌握HarmonyOS应用开发。
