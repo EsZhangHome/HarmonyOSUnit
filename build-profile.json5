@@ -1,0 +1,66 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "debug",
+        "material": {
+          "storePassword": "00000019387AC0B73B6D8E8970EB882E56399C39BC3FF7E60B6326FCC67F97D353DC2C5C7CF4EB70D4",
+          "certpath": "/Users/admin/ZesProject/HarmonyOS/debug/HarmonyOS_Unit_Debug.cer",
+          "keyAlias": "HarmonyOS_Unit_Debug",
+          "keyPassword": "00000019B647C09B3669A6F72082E2B3F66C8D184AF3DD1B69BC9750DF56EEA7137DF69D9801D7F6F8",
+          "profile": "/Users/admin/ZesProject/HarmonyOS/debug/HarmonyUnit_DebugDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/admin/ZesProject/HarmonyOS/debug/HarmonyOSUnit_debug.p12"
+        }
+      },
+      {
+        "name": "release",
+        "material": {
+          "storePassword": "0000001970C83DBA691C80AB82DB9917A3FEEF66E6BB5E755E28CF0295317A01BF4C75E6EE3F37934B",
+          "certpath": "/Users/admin/ZesProject/HarmonyOS/release/HarmonyOS_Unit_Release.cer",
+          "keyAlias": "HarmonyOSUnit_Release",
+          "keyPassword": "000000195C76FA4B935FFC222DD67B0359171B7A65AF0BD23EB894A16F30AB08FB2C5CC82C91692306",
+          "profile": "/Users/admin/ZesProject/HarmonyOS/release/HarmonyUnit_ReleaseRelease.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/admin/ZesProject/HarmonyOS/release/HarmonyOSUnit_Release.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "debug",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
